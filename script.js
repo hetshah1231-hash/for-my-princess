@@ -172,3 +172,28 @@ document.body.style.setProperty("--x",e.clientX+"px");
 document.body.style.setProperty("--y",e.clientY+"px");
 
 });
+function fireworks(){
+
+for(let i=0;i<40;i++){
+
+let f=document.createElement("div");
+
+f.className="firework";
+
+f.style.left=Math.random()*100+"vw";
+
+f.style.top=Math.random()*100+"vh";
+
+f.style.background=`hsl(${Math.random()*360},100%,60%)`;
+
+document.body.appendChild(f);
+
+setTimeout(()=>{
+
+f.remove();
+
+},1200);
+
+}
+
+}
