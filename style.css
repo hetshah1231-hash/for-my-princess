@@ -600,3 +600,26 @@ transform:scale(1);
 transform:scale(1.2);
 }
 }
+/* Music Button */
+
+#musicBtn{
+position:fixed;
+top:20px;
+left:20px;
+padding:12px 20px;
+border:none;
+border-radius:30px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+color:white;
+font-size:15px;
+cursor:pointer;
+z-index:999;
+transition:.3s;
+}
+
+#musicBtn:hover{
+transform:scale(1.08);
+background:#ff2d75;
+box-shadow:0 0 20px #ff2d75;
+}
