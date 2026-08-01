@@ -212,3 +212,24 @@ const box = document.querySelector(".ring-box");
 box.classList.add("open");
 
 }
+setInterval(()=>{
+
+let s=document.createElement("div");
+
+s.className="sparkle";
+
+s.innerHTML="✨";
+
+s.style.left=Math.random()*100+"vw";
+
+s.style.top=Math.random()*100+"vh";
+
+document.body.appendChild(s);
+
+setTimeout(()=>{
+
+s.remove();
+
+},3000);
+
+},250);
