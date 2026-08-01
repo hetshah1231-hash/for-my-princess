@@ -288,3 +288,23 @@ loader.style.display="none";
 },3000);
 
 }
+function toggleMusic(){
+
+const music=document.getElementById("bgMusic");
+const btn=document.getElementById("musicBtn");
+
+if(music.paused){
+
+music.play();
+
+btn.innerHTML="⏸ Pause Music";
+
+}else{
+
+music.pause();
+
+btn.innerHTML="🎵 Play Music";
+
+}
+
+}
