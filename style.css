@@ -407,3 +407,66 @@ transform:rotateX(-160deg);
 opacity:1;
 transform:translateY(0) scale(1.2);
 }
+/* Moon */
+
+#moon{
+position:fixed;
+top:50px;
+right:40px;
+width:100px;
+height:100px;
+border-radius:50%;
+background:white;
+box-shadow:
+0 0 30px white,
+0 0 70px #ffffffaa;
+opacity:.9;
+}
+
+/* Shooting Stars */
+
+.shooting-star{
+position:fixed;
+width:180px;
+height:2px;
+background:linear-gradient(to right,white,transparent);
+transform:rotate(-35deg);
+opacity:.8;
+animation:shoot 8s linear infinite;
+}
+
+.s1{
+top:120px;
+left:-200px;
+animation-delay:0s;
+}
+
+.s2{
+top:260px;
+left:-250px;
+animation-delay:3s;
+}
+
+.s3{
+top:420px;
+left:-300px;
+animation-delay:6s;
+}
+
+@keyframes shoot{
+
+0%{
+transform:translateX(0) rotate(-35deg);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+transform:translateX(1700px) rotate(-35deg);
+opacity:0;
+}
+
+}
