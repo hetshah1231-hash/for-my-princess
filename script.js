@@ -75,6 +75,28 @@ function typeWriter(){
 
 function nextPage(){
 
-    alert("💌 Next page me envelope aur love letter aayega... ❤️");
+document.body.innerHTML=`
+
+<div class="envelope-page">
+
+<h1>💌</h1>
+
+<h2>To My Princess Saniya ❤️</h2>
+
+<div class="envelope" onclick="openLetter()">
+
+<div class="cover"></div>
+
+<div class="letter">
+❤️ Open Me ❤️
+</div>
+
+</div>
+
+<p>Tap the envelope</p>
+
+</div>
+
+`;
 
 }
