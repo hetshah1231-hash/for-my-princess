@@ -521,3 +521,40 @@ opacity:0;
         transform:translateY(-10px);
     }
 }
+#loveQuote{
+
+position:fixed;
+
+bottom:20px;
+
+width:100%;
+
+text-align:center;
+
+font-size:18px;
+
+font-family:'Great Vibes',cursive;
+
+color:#ffc4da;
+
+animation:quoteGlow 3s infinite;
+
+}
+
+@keyframes quoteGlow{
+
+0%,100%{
+
+opacity:.5;
+
+}
+
+50%{
+
+opacity:1;
+
+text-shadow:0 0 20px hotpink;
+
+}
+
+}
