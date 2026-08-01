@@ -19,8 +19,19 @@ function checkPassword(){
             music.play().catch(()=>{});
         }
 
-        showPage("page2");
-        typeWelcome();
+        const doors = document.getElementById("doors");
+
+doors.style.display = "block";
+
+setTimeout(() => {
+    doors.classList.add("open");
+}, 100);
+
+setTimeout(() => {
+    doors.style.display = "none";
+    showPage("page2");
+    typeWelcome();
+}, 1700);
 
     }else{
         error.innerHTML = "❌ Wrong Password";
