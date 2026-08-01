@@ -358,3 +358,52 @@ opacity:1;
 transform:scale(18);
 opacity:0;
 }
+/* Ring Box */
+
+.ring-box{
+width:160px;
+height:140px;
+margin:20px auto;
+position:relative;
+cursor:pointer;
+perspective:800px;
+}
+
+.ring-lid{
+position:absolute;
+width:160px;
+height:70px;
+background:#ff2d75;
+border-radius:12px 12px 0 0;
+transform-origin:top;
+transition:1s;
+z-index:2;
+}
+
+.ring-base{
+position:absolute;
+bottom:0;
+width:160px;
+height:80px;
+background:#b30059;
+border-radius:0 0 12px 12px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.diamond-ring{
+font-size:55px;
+opacity:0;
+transform:translateY(20px) scale(.5);
+transition:1s;
+}
+
+.ring-box.open .ring-lid{
+transform:rotateX(-160deg);
+}
+
+.ring-box.open .diamond-ring{
+opacity:1;
+transform:translateY(0) scale(1.2);
+}
