@@ -182,3 +182,58 @@ transform:rotate(10deg);
 color:#ffb3c7;
 margin-top:15px;
 }
+/* Floating Hearts */
+
+#hearts::before{
+content:"❤️ ❤️ 💖 ❤️ 💕 ❤️ 💖 ❤️ 💕 ❤️";
+position:absolute;
+left:0;
+width:100%;
+font-size:22px;
+animation:heartFall 18s linear infinite;
+opacity:.5;
+}
+
+@keyframes heartFall{
+
+0%{
+transform:translateY(110vh);
+}
+
+100%{
+transform:translateY(-120vh);
+}
+
+}
+
+/* Flowers */
+
+#flowers::before{
+
+content:"🌹 🌸 🌺 🌷 🌹 🌸 🌺 🌷";
+
+position:absolute;
+
+left:0;
+
+width:100%;
+
+font-size:28px;
+
+animation:flowerFall 22s linear infinite;
+
+opacity:.55;
+
+}
+
+@keyframes flowerFall{
+
+0%{
+transform:translateY(-150px);
+}
+
+100%{
+transform:translateY(110vh);
+}
+
+}
