@@ -494,3 +494,30 @@ opacity:0;
 }
 
 }
+.page{
+    opacity:0;
+    transform:translateY(50px) scale(.96);
+    transition:all .8s ease;
+    pointer-events:none;
+}
+
+.page.active{
+    opacity:1;
+    transform:translateY(0) scale(1);
+    pointer-events:auto;
+}
+
+.glass,
+.letter,
+.proposal{
+    animation:floatCard 4s ease-in-out infinite;
+}
+
+@keyframes floatCard{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
