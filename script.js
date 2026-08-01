@@ -108,14 +108,52 @@ function goProposal(){
     showPage("page5");
 }
 
-document.getElementById("yesBtn").addEventListener("click",function(){
+document.getElementById("yesBtn").onclick = function(){
 
     fireworks();
 
+    this.innerHTML = "❤️ Forever Together ❤️";
+    this.style.background = "hotpink";
+
     setTimeout(() => {
 
-        alert("❤️ Yay! Forever Together ❤️");
+        document.body.innerHTML = `
 
+        <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        height:100vh;
+        background:#000;
+        color:white;
+        text-align:center;
+        ">
+
+        <h1 style="font-size:90px;">💖</h1>
+
+        <h2 style="font-size:50px;font-family:'Great Vibes',cursive;">
+        Happy Girlfriend Day
+        </h2>
+
+        <h1 style="color:#ff77b7;">
+        Saniya ❤️
+        </h1>
+
+        <p style="font-size:22px;">
+        Thank You For Being My Everything ❤️
+        <br><br>
+        Forever Yours,<br>
+        Het ❤️
+        </p>
+
+        </div>
+
+        `;
+
+    },2000);
+
+};
     },300);
 
 });
