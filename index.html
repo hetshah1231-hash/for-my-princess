@@ -3,40 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>For My Princess ❤️</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="stars"></div>
-<div class="hearts"></div>
-<div class="flowers"></div>
+<!-- Background -->
 
-<div class="login-box">
+<div id="stars"></div>
+<div id="hearts"></div>
+<div id="flowers"></div>
 
-<h1>❤️</h1>
+<!-- Music -->
 
-<h2>A Surprise For</h2>
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
 
-<h3>Saniya</h3>
+<!-- PAGE 1 -->
+
+<section id="page1" class="page active">
+
+<div class="glass">
+
+<h3>❤️ A Special Surprise ❤️</h3>
+
+<h1>Saniya</h1>
 
 <p>
-Only My Princess Can Enter 👑
+Only My Princess Can Unlock This
 </p>
 
 <input
-id="password"
 type="password"
+id="password"
 placeholder="Enter Password">
 
 <button onclick="checkPassword()">
 
-Unlock My Heart ❤️
+Unlock ❤️
 
 </button>
 
@@ -44,9 +54,101 @@ Unlock My Heart ❤️
 
 </div>
 
-<audio id="bgMusic" loop>
-<source src="music.mp3" type="audio/mpeg">
-</audio>
+</section>
+
+<!-- PAGE 2 -->
+
+<section id="page2" class="page">
+
+<div class="glass">
+
+<h2>Welcome My Princess 👑</h2>
+
+<h1>Het ❤️ Saniya</h1>
+
+<p id="typing"></p>
+
+<button onclick="goEnvelope()">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- PAGE 3 -->
+
+<section id="page3" class="page">
+
+<div class="glass">
+
+<h2>💌</h2>
+
+<h1>To My Princess</h1>
+
+<div class="envelope" onclick="openLetter()">
+
+❤️
+
+</div>
+
+<p>
+Tap the Envelope
+</p>
+
+</div>
+
+</section>
+
+<!-- PAGE 4 -->
+
+<section id="page4" class="page">
+
+<div class="letter">
+
+<h1>My Love ❤️</h1>
+
+<p id="loveLetter"></p>
+
+<button onclick="goProposal()">
+
+One Last Surprise 💍
+
+</button>
+
+</div>
+
+</section>
+
+<!-- PAGE 5 -->
+
+<section id="page5" class="page">
+
+<div class="proposal">
+
+<h1>💍</h1>
+
+<h2>Happy Girlfriend Day</h2>
+
+<h3>Saniya ❤️</h3>
+
+<p>
+
+Will You Stay With Me Forever?
+
+</p>
+
+<button id="yesBtn">
+
+YES FOREVER ❤️
+
+</button>
+
+</div>
+
+</section>
 
 <script src="script.js"></script>
 
