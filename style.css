@@ -231,7 +231,23 @@ opacity:.55;
 0%{
 transform:translateY(-150px);
 }
+/* Mouse Glow */
 
+body::after{
+content:"";
+position:fixed;
+width:250px;
+height:250px;
+border-radius:50%;
+background:radial-gradient(circle,#ff4d88aa,transparent 70%);
+pointer-events:none;
+left:var(--x);
+top:var(--y);
+transform:translate(-50%,-50%);
+filter:blur(40px);
+opacity:.7;
+transition:.08s;
+}
 100%{
 transform:translateY(110vh);
 }
