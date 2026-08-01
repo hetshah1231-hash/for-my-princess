@@ -110,7 +110,15 @@ function goProposal(){
 
 document.getElementById("yesBtn").addEventListener("click",function(){
 
-    alert("❤️ Yay! Forever Together ❤️");
+    fireworks();
+
+    setTimeout(() => {
+
+        alert("❤️ Yay! Forever Together ❤️");
+
+    },300);
+
+});
 
 });
 document.getElementById("yesBtn").addEventListener("click",()=>{
