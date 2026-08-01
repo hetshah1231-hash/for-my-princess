@@ -558,3 +558,45 @@ text-shadow:0 0 20px hotpink;
 }
 
 }
+/* Loader */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#05010d;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:9999;
+transition:1s;
+}
+
+.loader-heart{
+font-size:90px;
+animation:heartbeat 1s infinite;
+}
+
+#loader h1{
+font-family:'Great Vibes',cursive;
+margin-top:20px;
+font-size:50px;
+color:#ff6ca8;
+}
+
+#loader p{
+color:#fff;
+margin-top:10px;
+}
+
+@keyframes heartbeat{
+0%,100%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.2);
+}
+}
