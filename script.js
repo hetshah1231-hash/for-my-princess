@@ -205,3 +205,10 @@ f.remove();
 }
 
 }
+function openRing(){
+
+const box = document.querySelector(".ring-box");
+
+box.classList.add("open");
+
+}
