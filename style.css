@@ -253,3 +253,108 @@ transform:translateY(110vh);
 }
 
 }
+.firework{
+position:fixed;
+width:10px;
+height:10px;
+border-radius:50%;
+background:#fff;
+animation:boom 1.2s linear forwards;
+pointer-events:none;
+}
+
+@keyframes boom{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+100%{
+transform:scale(18);
+opacity:0;
+}
+.firework{
+position:fixed;
+width:10px;
+height:10px;
+border-radius:50%;
+background:#fff;
+animation:boom 1.2s linear forwards;
+pointer-events:none;
+}
+
+@keyframes boom{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+100%{
+transform:scale(18);
+opacity:0;
+}
+.firework{
+position:fixed;
+width:10px;
+height:10px;
+border-radius:50%;
+background:#fff;
+animation:boom 1.2s linear forwards;
+pointer-events:none;
+}
+
+@keyframes boom{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+100%{
+transform:scale(18);
+opacity:0;
+}
+.firework{
+position:fixed;
+width:10px;
+height:10px;
+border-radius:50%;
+background:#fff;
+animation:boom 1.2s linear forwards;
+pointer-events:none;
+}
+
+@keyframes boom{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+100%{
+transform:scale(18);
+opacity:0;
+}
+.firework{
+position:fixed;
+width:10px;
+height:10px;
+border-radius:50%;
+background:#fff;
+animation:boom 1.2s linear forwards;
+pointer-events:none;
+}
+
+@keyframes boom{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+100%{
+transform:scale(18);
+opacity:0;
+}
