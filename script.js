@@ -100,3 +100,62 @@ document.body.innerHTML=`
 `;
 
 }
+function openLetter(){
+
+document.body.innerHTML=`
+
+<div class="love-page">
+
+<h1>💖 My Love Letter 💖</h1>
+
+<div class="love-card">
+
+<p id="loveText"></p>
+
+</div>
+
+<button onclick="proposalPage()">
+
+One Last Surprise 💍
+
+</button>
+
+</div>
+
+`;
+
+const txt=`Dear Saniya ❤️
+
+Happy Girlfriend Day ❤️
+
+You are the most beautiful chapter of my life.
+
+Every smile of yours makes my world brighter.
+
+Thank you for being with me.
+
+I promise I'll always choose you.
+
+Forever Yours,
+
+Het ❤️`;
+
+let i=0;
+
+function typing(){
+
+if(i<txt.length){
+
+document.getElementById("loveText").innerHTML+=txt.charAt(i);
+
+i++;
+
+setTimeout(typing,35);
+
+}
+
+}
+
+typing();
+
+}
