@@ -113,3 +113,55 @@ document.getElementById("yesBtn").addEventListener("click",function(){
     alert("❤️ Yay! Forever Together ❤️");
 
 });
+document.getElementById("yesBtn").addEventListener("click",()=>{
+
+document.body.innerHTML=`
+
+<div style="
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+background:black;
+color:white;
+text-align:center;
+overflow:hidden;
+">
+
+<h1 style="
+font-size:90px;
+font-family:Great Vibes;
+color:#ff6ca8;
+animation:pulse 1s infinite;
+">
+
+❤️ I LOVE YOU ❤️
+
+</h1>
+
+<h2>
+
+Happy Girlfriend Day Saniya ❤️
+
+</h2>
+
+<p>
+
+Forever Yours,<br>
+
+Het ❤️
+
+</p>
+
+<div style="font-size:60px;margin-top:40px">
+
+🎆 🎇 💖 🌹 💍 ❤️ 🎆
+
+</div>
+
+</div>
+
+`;
+
+});
