@@ -127,7 +127,7 @@ function goProposal(){
 document.getElementById("yesBtn").onclick = function(){
 
     fireworks();
-
+    heartExplosion();
     this.innerHTML = "❤️ Forever Together ❤️";
     this.style.background = "hotpink";
 
