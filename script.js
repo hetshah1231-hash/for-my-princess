@@ -183,9 +183,9 @@ document.body.innerHTML=`
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
 flex-direction:column;
-background:black;
+height:100vh;
+background:radial-gradient(circle,#220022,#000);
 color:white;
 text-align:center;
 overflow:hidden;
@@ -193,34 +193,52 @@ overflow:hidden;
 
 <h1 style="
 font-size:90px;
-font-family:Great Vibes;
-color:#ff6ca8;
 animation:pulse 1s infinite;
 ">
 
-❤️ I LOVE YOU ❤️
+❤️
 
 </h1>
 
-<h2>
+<h2 style="
+font-family:'Great Vibes',cursive;
+font-size:60px;
+color:#ff6ca8;
+">
 
-Happy Girlfriend Day Saniya ❤️
+Happy Girlfriend Day
 
 </h2>
 
-<p>
+<h1>
 
-Forever Yours,<br>
+Saniya ❤️
 
-Het ❤️
+</h1>
+
+<p style="font-size:24px;line-height:1.8">
+
+Every moment with you is my favorite memory.
+
+Thank you for loving me.
+
+I promise to stand beside you,
+
+today,
+
+tomorrow,
+
+and always.
+
+❤️
+
+<br><br>
+
+Forever Yours,
+
+<b>Het ❤️</b>
 
 </p>
-
-<div style="font-size:60px;margin-top:40px">
-
-🎆 🎇 💖 🌹 💍 ❤️ 🎆
-
-</div>
 
 </div>
 
