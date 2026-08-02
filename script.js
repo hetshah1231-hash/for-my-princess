@@ -432,3 +432,37 @@ b.remove();
 }
 
 setInterval(createButterfly,4000);
+const messages=[
+"❤️ I Love You",
+"🌹 Forever Together",
+"💖 You Are My Happiness",
+"🥰 My Princess",
+"💍 Het ❤️ Saniya"
+];
+
+setInterval(()=>{
+
+let t=document.createElement("div");
+
+t.innerHTML=messages[Math.floor(Math.random()*messages.length)];
+
+t.style.position="fixed";
+t.style.left=Math.random()*80+"vw";
+t.style.bottom="-50px";
+t.style.color="white";
+t.style.fontSize="22px";
+t.style.zIndex="1000";
+t.style.transition="6s linear";
+
+document.body.appendChild(t);
+
+setTimeout(()=>{
+t.style.bottom="110vh";
+t.style.opacity="0";
+},100);
+
+setTimeout(()=>{
+t.remove();
+},6000);
+
+},3500);
