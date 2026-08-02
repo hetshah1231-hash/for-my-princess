@@ -261,9 +261,17 @@ f.remove();
 }
 function openRing(){
 
-const box = document.querySelector(".ring-box");
+    const box = document.querySelector(".ring-box");
 
-box.classList.add("open");
+    box.classList.add("open");
+
+    setTimeout(()=>{
+
+        fireworks();
+
+ },700);
+
+}
 
 }
 setInterval(()=>{
