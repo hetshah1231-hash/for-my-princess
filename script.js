@@ -332,3 +332,41 @@ btn.innerHTML="🎵 Play Music";
 }
 
 }
+function heartExplosion(){
+
+    for(let i=0;i<25;i++){
+
+        let heart=document.createElement("div");
+
+        heart.innerHTML="❤️";
+
+        heart.style.position="fixed";
+        heart.style.left="50%";
+        heart.style.top="50%";
+        heart.style.fontSize="30px";
+        heart.style.pointerEvents="none";
+        heart.style.zIndex="9999";
+
+        let x=(Math.random()-0.5)*500;
+        let y=(Math.random()-0.5)*500;
+
+        heart.animate([
+            {
+                transform:"translate(0,0) scale(1)",
+                opacity:1
+            },
+            {
+                transform:`translate(${x}px,${y}px) scale(0.5)`,
+                opacity:0
+            }
+        ],{
+            duration:1800
+        });
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>heart.remove(),1800);
+
+    }
+
+}
