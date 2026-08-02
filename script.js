@@ -409,3 +409,26 @@ petal.remove();
 }
 
 setInterval(createPetal,500);
+function createButterfly(){
+
+const b=document.createElement("div");
+
+b.className="butterfly";
+
+b.innerHTML="🦋";
+
+b.style.left="-80px";
+
+b.style.top=Math.random()*80+"vh";
+
+b.style.fontSize=(20+Math.random()*20)+"px";
+
+document.body.appendChild(b);
+
+setTimeout(()=>{
+b.remove();
+},12000);
+
+}
+
+setInterval(createButterfly,4000);
