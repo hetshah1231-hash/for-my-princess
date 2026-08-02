@@ -515,3 +515,36 @@ function updateCountdown(){
 setInterval(updateCountdown,1000);
 
 updateCountdown();
+document.addEventListener("click",(e)=>{
+
+for(let i=0;i<8;i++){
+
+let h=document.createElement("div");
+
+h.innerHTML="❤️";
+
+h.style.position="fixed";
+h.style.left=e.clientX+"px";
+h.style.top=e.clientY+"px";
+h.style.fontSize="22px";
+h.style.pointerEvents="none";
+h.style.transition="1.5s";
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+
+h.style.transform=`translate(${(Math.random()-0.5)*150}px,-120px)`;
+h.style.opacity="0";
+
+},50);
+
+setTimeout(()=>{
+
+h.remove();
+
+},1500);
+
+}
+
+});
