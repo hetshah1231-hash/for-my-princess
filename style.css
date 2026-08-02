@@ -751,3 +751,51 @@ transform:translateY(-90px);
         transform:translateY(-10px);
     }
 }
+/* Final Signature */
+
+#signature{
+position:fixed;
+bottom:10px;
+right:15px;
+font-size:14px;
+color:#ffffffaa;
+font-family:'Poppins',sans-serif;
+letter-spacing:1px;
+z-index:999;
+animation:signatureGlow 3s infinite;
+}
+
+@keyframes signatureGlow{
+
+0%,100%{
+opacity:.4;
+}
+
+50%{
+opacity:1;
+text-shadow:0 0 10px hotpink;
+}
+}
+
+/* Romantic Background */
+
+body{
+
+background:
+radial-gradient(circle at top,#2b003f,#090012,#000);
+
+animation:bgMove 15s infinite alternate;
+
+}
+
+@keyframes bgMove{
+
+0%{
+background-position:left top;
+}
+
+100%{
+background-position:right bottom;
+}
+
+}
