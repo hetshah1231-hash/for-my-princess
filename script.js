@@ -548,3 +548,39 @@ h.remove();
 }
 
 });
+function confettiRain(){
+
+const colors=[
+"#ff2d75",
+"#ffd700",
+"#00e5ff",
+"#ffffff",
+"#7CFC00",
+"#ff66cc"
+];
+
+for(let i=0;i<150;i++){
+
+const c=document.createElement("div");
+
+c.className="confetti";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.background=
+colors[Math.floor(Math.random()*colors.length)];
+
+c.style.animationDuration=
+(3+Math.random()*3)+"s";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+
+c.remove();
+
+},6000);
+
+}
+
+}
