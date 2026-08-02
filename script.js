@@ -471,3 +471,29 @@ t.remove();
 },6000);
 
 },3500);
+const reasons=[
+"❤️ Because your smile makes my day.",
+"🌹 Because you understand me.",
+"🥰 Because you're my safe place.",
+"💖 Because every moment with you is special.",
+"💍 Because I want forever with you.",
+"✨ Because you are my Princess.",
+"💕 Because life is beautiful with you.",
+"❤️ Because I love you endlessly."
+];
+
+let reasonIndex=0;
+
+setInterval(()=>{
+
+const box=document.getElementById("reasonBox");
+
+if(box){
+
+box.innerHTML=reasons[reasonIndex];
+
+reasonIndex=(reasonIndex+1)%reasons.length;
+
+}
+
+},3000);
