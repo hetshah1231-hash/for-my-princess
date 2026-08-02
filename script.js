@@ -31,6 +31,11 @@ setTimeout(() => {
     doors.style.display = "none";
     showPage("page2");
     typeWelcome();
+    
+    setTimeout(() => {
+    alert("❤️ Welcome My Princess Saniya ❤️");
+}, 2000);
+    
 }, 1700);
 
     }else{
