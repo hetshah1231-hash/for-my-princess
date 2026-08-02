@@ -875,3 +875,23 @@ opacity:1;
 transform:translateY(0);
 }
 }
+#countdown{
+margin-top:25px;
+font-size:24px;
+font-family:'Great Vibes',cursive;
+color:#ffd6e8;
+animation:countGlow 2s infinite;
+}
+
+@keyframes countGlow{
+0%,100%{
+opacity:.6;
+text-shadow:0 0 5px #ff66aa;
+}
+50%{
+opacity:1;
+text-shadow:
+0 0 15px #ff66aa,
+0 0 30px #ff99cc;
+}
+}
