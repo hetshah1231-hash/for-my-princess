@@ -497,3 +497,21 @@ reasonIndex=(reasonIndex+1)%reasons.length;
 }
 
 },3000);
+function updateCountdown(){
+
+    const el = document.getElementById("countdown");
+
+    if(!el) return;
+
+    const now = new Date();
+
+    el.innerHTML =
+    "❤️ " +
+    now.toLocaleDateString() +
+    "<br>" +
+    now.toLocaleTimeString();
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
