@@ -73,10 +73,15 @@ function goEnvelope(){
 }
 
 function openLetter(){
-
+    
+const env = document.querySelector(".envelope-container");
+env.classList.add("open");
+    
+setTimeout(() => {
     showPage("page4");
+}, 1000);
 
-    const text=`Dear Saniya ❤️
+const text=`Dear Saniya ❤️
 
 Happy Girlfriend Day ❤️
 
