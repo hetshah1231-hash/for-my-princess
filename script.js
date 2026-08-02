@@ -133,6 +133,7 @@ document.getElementById("yesBtn").onclick = function(){
 
     fireworks();
     heartExplosion();
+    confettiRain();
     this.innerHTML = "❤️ Forever Together ❤️";
     this.style.background = "hotpink";
 
