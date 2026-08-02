@@ -715,3 +715,39 @@ transform:rotateX(-180deg);
 .envelope-container.open .letter-paper{
 transform:translateY(-90px);
 }
+/* Diamond Shine */
+
+.diamond-ring{
+    position:relative;
+    font-size:60px;
+    animation:ringFloat 2s ease-in-out infinite;
+}
+
+.diamond-ring::after{
+    content:"✨";
+    position:absolute;
+    top:-15px;
+    right:-10px;
+    font-size:22px;
+    animation:shine 1s infinite alternate;
+}
+
+@keyframes shine{
+    from{
+        transform:scale(.5) rotate(0deg);
+        opacity:.4;
+    }
+    to{
+        transform:scale(1.5) rotate(25deg);
+        opacity:1;
+    }
+}
+
+@keyframes ringFloat{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
